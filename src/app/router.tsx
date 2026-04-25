@@ -6,6 +6,8 @@ import { LoginPage } from "../features/auth/pages/LoginPage";
 import { DashboardPage } from "../features/dashboard/pages/DashboardPage";
 import { HookDetailPage } from "../features/hooks/pages/HookDetailPage";
 import { ProfileSettingsPage } from "../features/profile/pages/ProfileSettingsPage";
+import DebouncePage from "../features/profile/pages/DebouncePage";
+import ThrottlePage from "../features/profile/pages/ThrottlePage";
 
 function NotFoundPage() {
   return (
@@ -43,6 +45,14 @@ export const router = createBrowserRouter([
           {
             path: "settings/profile",
             element: <ProfileSettingsPage />,
+          },
+          {
+            path: "settings/debounce",
+            element: <DebouncePage />,
+          },
+          {
+            path: "settings/throttle",
+            element: <ThrottlePage />,
           },
         ],
       },

@@ -28,11 +28,13 @@ describe("ProtectedRoute", () => {
   it("redirects to login when token is missing", () => {
     render(<TestApp />);
     expect(screen.getByText("Login Page")).toBeInTheDocument();
+    expect(screen.queryByText("Dashboard Page")).not.toBeInTheDocument();
   });
 
   it("renders protected content when token exists", () => {
     useAuthStore.setState({ token: "demo-token" });
     render(<TestApp />);
     expect(screen.getByText("Dashboard Page")).toBeInTheDocument();
+    expect(screen.queryByText("Login Page")).not.toBeInTheDocument();
   });
 });

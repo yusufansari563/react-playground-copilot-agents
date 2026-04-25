@@ -5,6 +5,8 @@ const links = [
   { to: "/dashboard", label: "Dashboard" },
   { to: "/hooks/useState", label: "Hooks" },
   { to: "/settings/profile", label: "Profile" },
+  { to: "/settings/debounce", label: "Debounce" },
+  { to: "/settings/throttle", label: "Throttle" },
 ];
 
 export function AppLayout() {
