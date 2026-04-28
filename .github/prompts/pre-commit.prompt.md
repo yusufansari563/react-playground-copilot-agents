@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Pre-commit quality checklist: types, lint, tests, stories, docs, and commit message readiness."
+---
+
 Run a pre-commit quality pass for the current changes.
 
 Checklist:

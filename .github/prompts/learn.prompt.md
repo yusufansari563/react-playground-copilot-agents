@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Explain a React ecosystem concept with examples tied to this stack and a practical exercise."
+---
+
 Teach a React ecosystem concept using this project's stack.
 
 Requirements:

@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Generate Conventional Commits message options from the current staged diff."
+---
+
 Generate conventional commit messages based on the staged diff.
 
 Requirements:

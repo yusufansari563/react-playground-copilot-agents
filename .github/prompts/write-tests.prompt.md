@@ -1,3 +1,8 @@
+---
+mode: "agent"
+description: "Write Vitest + RTL tests covering behavior, loading/error states, and regressions."
+---
+
 Write tests for the recent code changes.
 
 Stack:

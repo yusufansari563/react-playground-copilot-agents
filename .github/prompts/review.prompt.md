@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Review recent changes: bugs, regressions, risks, and missing tests ordered by severity."
+---
+
 Review the recent changes in this repository.
 
 Focus order:

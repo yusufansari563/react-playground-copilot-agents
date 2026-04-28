@@ -1,3 +1,8 @@
+---
+mode: "agent"
+description: "Implement a planned feature following project architecture and conventions."
+---
+
 Implement the requested feature in this React + TypeScript project.
 
 Rules:

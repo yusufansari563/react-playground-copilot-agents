@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Find curated, level-tagged learning resources for a React ecosystem topic with a suggested order."
+---
+
 Find high-quality learning resources for a specific React ecosystem topic.
 
 Requirements:

@@ -1,3 +1,8 @@
+---
+mode: "agent"
+description: "Fix a bug root-cause-first with a minimal safe fix and regression tests."
+---
+
 Fix the reported bug with a root-cause-first approach.
 
 Requirements:

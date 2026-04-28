@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Plan a new feature: scope, routes, data contracts, state strategy, test/story plan, and acceptance checklist."
+---
+
 You are planning a feature for a React + TypeScript + Vite project.
 
 Inputs:

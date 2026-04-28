@@ -1,3 +1,8 @@
+---
+mode: "agent"
+description: "Create or update Storybook stories with practical variants and controls for UI components."
+---
+
 Create or update Storybook stories for changed UI components.
 
 Requirements:

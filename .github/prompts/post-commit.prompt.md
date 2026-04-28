@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Post-commit follow-up: summary, remaining TODOs, next commit scope, and changelog draft."
+---
+
 Run a post-commit follow-up workflow.
 
 Include:

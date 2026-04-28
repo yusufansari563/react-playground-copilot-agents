@@ -1,3 +1,8 @@
+---
+mode: "agent"
+description: "Identify bottlenecks and apply measurable performance optimizations."
+---
+
 Optimize performance in the target area.
 
 Requirements:

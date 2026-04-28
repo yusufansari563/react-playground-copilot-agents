@@ -1,3 +1,8 @@
+---
+mode: "ask"
+description: "Snapshot learning progress, identify gaps, and produce a 1-week action plan and 1-month milestone."
+---
+
 Track and summarize learning progress for React ecosystem goals.
 
 Inputs:

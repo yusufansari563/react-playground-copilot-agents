@@ -1,3 +1,8 @@
+---
+mode: "agent"
+description: "Refactor code for readability and modularity without changing behavior or public APIs."
+---
+
 Refactor the selected code without changing behavior.
 
 Requirements:
