@@ -8,6 +8,7 @@ import { HookDetailPage } from "../features/hooks/pages/HookDetailPage";
 import { ProfileSettingsPage } from "../features/profile/pages/ProfileSettingsPage";
 import DebouncePage from "../features/profile/pages/DebouncePage";
 import ThrottlePage from "../features/profile/pages/ThrottlePage";
+import OPBasedQuestion from "../features/profile/pages/OPBasedQuestion";
 
 function NotFoundPage() {
   return (
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
           {
             path: "settings/throttle",
             element: <ThrottlePage />,
+          },
+          {
+            path: "settings/OPBasedQuestion",
+            element: <OPBasedQuestion />,
           },
         ],
       },

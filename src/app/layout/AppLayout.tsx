@@ -7,6 +7,7 @@ const links = [
   { to: "/settings/profile", label: "Profile" },
   { to: "/settings/debounce", label: "Debounce" },
   { to: "/settings/throttle", label: "Throttle" },
+  { to: "/settings/OPBasedQuestion", label: "Output Questions" },
 ];
 
 export function AppLayout() {

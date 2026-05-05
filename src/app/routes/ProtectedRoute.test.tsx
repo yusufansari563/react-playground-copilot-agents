@@ -22,17 +22,27 @@ function TestApp() {
 
 describe("ProtectedRoute", () => {
   beforeEach(() => {
-    useAuthStore.setState({ token: null });
+    useAuthStore.setState({ token: null, isAuthenticationRequired: false });
   });
 
-  it("redirects to login when token is missing", () => {
+  it("renders protected content by default when authentication is not required", () => {
+    render(<TestApp />);
+    expect(screen.getByText("Dashboard Page")).toBeInTheDocument();
+    expect(screen.queryByText("Login Page")).not.toBeInTheDocument();
+  });
+
+  it("redirects to login when authentication is required and token is missing", () => {
+    useAuthStore.setState({ isAuthenticationRequired: true });
     render(<TestApp />);
     expect(screen.getByText("Login Page")).toBeInTheDocument();
     expect(screen.queryByText("Dashboard Page")).not.toBeInTheDocument();
   });
 
-  it("renders protected content when token exists", () => {
-    useAuthStore.setState({ token: "demo-token" });
+  it("renders protected content when authentication is required and token exists", () => {
+    useAuthStore.setState({
+      token: "demo-token",
+      isAuthenticationRequired: true,
+    });
     render(<TestApp />);
     expect(screen.getByText("Dashboard Page")).toBeInTheDocument();
     expect(screen.queryByText("Login Page")).not.toBeInTheDocument();
