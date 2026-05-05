@@ -1,6 +1,14 @@
 import { useState, useMemo } from "react";
 
-const questions = [
+interface Question {
+  id: number;
+  category: string;
+  code: string;
+  answer: string;
+  explanation: string;
+}
+
+const questions: Question[] = [
   // ─── HOISTING ───
   {
     id: 1,
@@ -1550,7 +1558,7 @@ const CATEGORIES = ["All", ...new Set(questions.map((q) => q.category))];
 export default function OPBasedQuestion() {
   const [selectedCat, setSelectedCat] = useState("All");
   const [search, setSearch] = useState("");
-  const [revealed, setRevealed] = useState({});
+  const [revealed, setRevealed] = useState<Record<number, boolean>>({});
   const [revealAll, setRevealAll] = useState(false);
 
   const filtered = useMemo(() => {
@@ -1564,7 +1572,7 @@ export default function OPBasedQuestion() {
     });
   }, [selectedCat, search]);
 
-  const toggle = (id: any) => setRevealed((r) => ({ ...r, [id]: !r[id] }));
+  const toggle = (id: number) => setRevealed((r) => ({ ...r, [id]: !r[id] }));
 
   return (
     <div
@@ -1700,7 +1708,7 @@ export default function OPBasedQuestion() {
         </div>
 
         {/* Questions */}
-        {filtered.map((q: { id: any }, i: any) => {
+        {filtered.map((q: Question) => {
           const isRevealed = revealAll || revealed[q.id];
           return (
             <div
